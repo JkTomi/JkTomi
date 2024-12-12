@@ -1,0 +1,178 @@
+<!DOCTYPE html><html>
+<head>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Slab&family=Ubuntu&family=Yeseva+One&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<style>
+  body {
+    margin: 0;
+    background-color: lightblue;
+  }
+a:link,a:visited {
+  color: #939ef0;
+  text-decoration:none;
+}
+a:hover{color: #8f00ff;}
+  .top-section {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  .logo {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+  }
+  .title-tagline {
+    display: flex;
+    flex-direction: column;
+  }
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+  }
+  .tagline {
+    font-style: italic;
+    margin: 5px 0 0;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+  }
+  .navbar span{color: #939ef0;}
+  .n {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .nav-link {
+    margin-right: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    font-family: 'Yeseva One', cursive;
+  }
+  .sub-menu-parent {
+    position: relative;
+    cursor: pointer;
+  }
+  .sub-menu {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-2em);
+    z-index: -1;
+    transition: all 0.3s ease-in-out;
+    background-color: #333;
+    padding: 10px;
+    list-style-type:none;
+  }
+
+  .sub-menu-parent:focus .sub-menu,
+  .sub-menu-parent:focus-within .sub-menu,
+  .sub-menu-parent:hover .sub-menu {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0%);
+    transition-delay: 0s, 0s, 0s;
+  }
+  .footer {
+            background-color: #b0c4de; /* blue-gray shade */
+            color: #333; /* Placeholder for font color, customize here */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px; /* Adjust padding for height */
+            height: 1.5cm; /* Approx 40px */
+            z-index: 1000;
+        }
+        .footer .left {
+            text-align: left;
+        }
+        .footer .right {
+            text-align: right;
+        }
+        .footer span {
+            font-size: 14px; /* Customize font size */
+        }
+
+  @media screen and (max-width: 768px) {
+    .top-section {
+      flex-direction: column;
+      align-items: center;
+    }
+    .logo {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+    .n {
+      flex-direction: column;
+      text-align: center;
+      width: 100%;
+    }
+  }
+</style>
+<title>JKToMI</title>
+</head>
+<body>
+  <div class="top-section">
+    <img src="logo.png" class="logo">
+    <div class="title-tagline">
+      <h1 class="title">JKToMI</h1>
+      <p class="tagline">JK Top one Music Insitute</p>
+    </div>
+  </div>
+  <div class="navbar">
+    <div class="n">
+      <a href="index.html" class="nav-link">Home</a>
+      <span class="sub-menu-parent nav-link">
+      <span>Courses</span>
+        <ul class="sub-menu">
+          <li><a href="beginner.html">Easy</a></li>
+          <li><a href="intermediate.html">Medium</a></li>
+          <li><a href="expert.html">Hard</a></li>
+        </ul>
+      </span>
+      <span class="sub-menu-parent nav-link">
+        <span>Instruments</span>
+        <ul class="sub-menu">
+          <li><a href="tambura.html">Tanpura</a></li>
+          <li><a href="tabla.html">Tabla</a></li>
+      
+        </ul>
+      </span>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+  </div>
+  <div>
+    <div style="padding: 20px 30px 0px;">
+      <h1 style="font-family: 'Ubuntu', sans-serif;">Tutorials</h1>
+      
+
+
+<p style="font-size: 30px;font-family: 'Roboto Slab', serif;
+ "><b>Expert</b></p>
+<iframe src='https://widgets.sociablekit.com/youtube-playlist-videos/iframe/199873' frameborder='0' width='100%' height='1000'></iframe>
+    </div>
+  </div>
+  <footer class="footer">
+    <span class="left">JASBIR SINGH</span>
+    <span class="right">Developed by Jayendra Singh Jasrotia</span>
+</footer>
+</body>
+</html>
